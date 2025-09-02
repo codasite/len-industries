@@ -219,6 +219,12 @@ document.addEventListener('DOMContentLoaded', function() {
         highPriceSpan.textContent = '$' + highPrice.toLocaleString();
         resultsDiv.style.display = 'block';
         
+        // Show the call button in the Ready to Get Started section
+        const callUsReadyDiv = document.getElementById('call-us-ready');
+        if (callUsReadyDiv) {
+            callUsReadyDiv.style.display = 'block';
+        }
+        
         // Scroll to results
         resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
