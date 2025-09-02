@@ -1,0 +1,59 @@
+/* Custom button styling to emphasize call button */
+
+/* Make the call button (link_button-40-9) yellow/amber and prominent */
+#link_button-40-9 {
+    background: #fcb900 !important; /* luminous-vivid-amber from site's color palette */
+    border-color: #fcb900 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 4px rgba(252, 185, 0, 0.3) !important;
+}
+
+#link_button-40-9:hover {
+    background: #e6a600 !important; /* darker amber on hover */
+    border-color: #e6a600 !important;
+    color: #000 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(252, 185, 0, 0.4) !important;
+}
+
+/* Make the estimate button (link_button-25-9) more subtle */
+#link_button-25-9 {
+    background: #f8f9fa !important; /* light gray background */
+    border-color: #dee2e6 !important;
+    color: #495057 !important;
+    font-weight: normal !important;
+}
+
+#link_button-25-9:hover {
+    background: #e9ecef !important;
+    border-color: #adb5bd !important;
+    color: #495057 !important;
+}
+
+/* Ensure buttons maintain their layout */
+#div_block-41-9 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#div_block-41-9 a {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #div_block-41-9 {
+        flex-direction: column;
+    }
+    
+    #div_block-41-9 a {
+        min-width: auto;
+        width: 100%;
+    }
+}
