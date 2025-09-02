@@ -41,16 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
             max-width: 500px;
             margin: 20px auto;
             padding: 30px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: transparent;
+            border: none;
+            box-shadow: none;
         }
         
         .asphalt-calculator h3 {
             text-align: center;
             margin-bottom: 25px;
-            color: #333;
+            color: inherit;
             font-size: 24px;
+            font-weight: inherit;
         }
         
         .form-group {
@@ -60,22 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
         .form-group label {
             display: block;
             margin-bottom: 8px;
-            font-weight: 600;
-            color: #555;
+            font-weight: inherit;
+            color: inherit;
         }
         
         .form-group input {
             width: 100%;
             padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
             font-size: 16px;
+            font-family: inherit;
+            background: #fff;
             box-sizing: border-box;
         }
         
         .form-group input:focus {
             outline: none;
-            border-color: #007bff;
+            border-color: #0071a1;
         }
         
         .unit {
@@ -85,34 +88,42 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         #calculate-btn {
-            width: 100%;
-            padding: 15px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: 600;
+            display: inline-block;
+            padding: 12px 24px;
+            background: #0071a1;
+            color: #fff;
+            border: 1px solid #0071a1;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: inherit;
+            font-family: inherit;
+            line-height: 2;
+            text-decoration: none;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: center;
         }
         
         #calculate-btn:hover {
-            background: #0056b3;
+            background: #005a87;
+            border-color: #005a87;
+            color: #fff;
         }
         
         .results {
             margin-top: 25px;
             padding: 20px;
-            background: white;
-            border-radius: 8px;
-            border: 2px solid #28a745;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            border: 1px solid #ddd;
         }
         
         .results h4 {
             text-align: center;
             margin-bottom: 15px;
-            color: #333;
+            color: inherit;
+            font-size: 18px;
         }
         
         .price-range {
@@ -123,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .price-range span {
             font-size: 24px;
             font-weight: bold;
-            color: #28a745;
+            color: #0071a1;
         }
         
         .and {
@@ -143,6 +154,16 @@ document.addEventListener('DOMContentLoaded', function() {
             color: #dc3545;
             font-size: 14px;
             margin-top: 5px;
+        }
+        
+        /* Make form blend better with site */
+        .asphalt-calculator * {
+            box-sizing: border-box;
+        }
+        
+        .asphalt-calculator input,
+        .asphalt-calculator button {
+            font-family: inherit;
         }
         </style>
     `;
