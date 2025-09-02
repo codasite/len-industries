@@ -1,0 +1,26 @@
+{
+  "name": "len-industries",
+  "version": "1.0.0",
+  "description": "Static version of Len Industries website - Asphalt maintenance and striping in Kentucky",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "deploy": "wrangler pages deploy . --project-name=len-industries",
+    "preview": "wrangler pages dev ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wstrategies/len-industries.git"
+  },
+  "keywords": [
+    "static-site",
+    "wordpress",
+    "asphalt",
+    "kentucky",
+    "cloudflare-pages"
+  ],
+  "author": "wstrategies",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
