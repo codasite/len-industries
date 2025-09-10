@@ -1,0 +1,197 @@
+/* Oxygen CSS reconstruction (minimal) */
+
+/* General resets for Oxygen-generated markup */
+.oxygen-body {
+    box-sizing: border-box;
+}
+
+.oxygen-body *, .oxygen-body *::before, .oxygen-body *::after {
+    box-sizing: inherit;
+}
+
+/* Sections */
+.ct-section {
+    padding: 2.5rem 0;
+}
+
+.ct-section-inner-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Headings */
+.heading-1 {
+    font-weight: 800;
+}
+
+/* Hero section adjustments (home) */
+#section-18-9 {
+    background: linear-gradient(180deg, #0b0b0b 0%, #1a1a1a 100%);
+    color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+#section-18-9 .ct-new-columns {
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#div_block-23-9 .ct-text-block {
+    color: #e8e8e8;
+}
+
+/* Right-side hero visual */
+#div_block-24-9 {
+    flex: 1 1 520px;
+    min-height: 420px;
+    background-image: url('/wp-content/uploads/2022/06/Image_20220615_085948-rotated-1-e1658544949760.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+#div_block-23-9 { flex: 1 1 520px; }
+
+#headline-3-9 {
+    font-size: clamp(2.2rem, 4vw, 3.25rem);
+    line-height: 1.15;
+    margin: 0 0 0.75rem 0;
+}
+
+#text_block-26-9 {
+    max-width: 52ch;
+    margin: 0 0 1.25rem 0;
+}
+
+/* CTA buttons */
+.ct-link-button.main-button {
+    background: #fcb900;
+    color: #000;
+    border-color: #fcb900;
+    text-transform: none;
+    letter-spacing: 0.2px;
+}
+
+.ct-link-button.main-button:hover {
+    background: #e6a600;
+    border-color: #e6a600;
+}
+
+#div_block-41-9 .ct-link-button { margin: 8px 12px 0 0; }
+
+/* Information section spacing */
+#information {
+    background: #fafafa;
+}
+
+#information .ct-headline {
+    color: #111;
+}
+
+/* About page hero section - full width centered */
+#section-18-9 .ct-div-block {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#section-18-9 .heading-1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0 0 1.5rem 0;
+}
+
+#section-18-9 .ct-text-block {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: none;
+    margin: 0;
+}
+
+/* Our work section */
+#section-8-15 { padding: 2rem 0; }
+#div_block-51-15 .ct-headline { text-align: center; margin: 0 0 1rem 0; }
+#new_columns-13-15 { margin-top: 0.5rem; }
+
+/* BEFORE / AFTER labels */
+#headline-22-15,
+#headline-25-15 {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+    opacity: 0.85;
+}
+
+/* Oxygen gallery basic layout safety */
+.oxy-gallery.oxy-gallery-flex {
+    gap: 16px;
+}
+
+/* Ensure gallery is responsive on small screens overriding inline widths */
+@media (max-width: 900px) {
+    #_gallery-36-15.oxy-gallery-flex .oxy-gallery-item { width: calc(50% - 16px - 16px) !important; }
+}
+@media (max-width: 600px) {
+    #_gallery-36-15.oxy-gallery-flex .oxy-gallery-item { width: calc(100% - 16px - 16px) !important; }
+}
+
+/* Shape divider sizing */
+.oxy_shape_divider svg {
+    height: 80px;
+}
+
+/* Generic image handling */
+.ct-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* About page before/after two-column layout */
+#new_columns-13-15 {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+#div_block-14-15,
+#div_block-15-15 {
+    flex: 1 1 320px;
+}
+
+/* CTA section */
+#section-43-15 { padding: 2.5rem 0; text-align: center; }
+
+.cta-phone-link {
+    display: inline-block;
+    background: #fcb900;
+    color: #000;
+    border: 2px solid #fcb900;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-phone-link:hover {
+    background: #e6a600;
+    border-color: #e6a600;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Utility */
+.text-center { text-align: center; }
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+    #div_block-24-9 { min-height: 240px; margin-top: 1rem; }
+}
+
