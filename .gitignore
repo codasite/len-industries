@@ -19,6 +19,7 @@ npm-debug.log*
 
 # WordPress specific (not needed for static site)
 wp-json/
+wp-content/uploads/oxygen/
 
 # Temporary files
 *.tmp
