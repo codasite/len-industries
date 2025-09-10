@@ -3,22 +3,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: transparent;
+    padding: 0.5rem 1rem;
+    background: #000;
     width: 100%;
     box-sizing: border-box;
+    color: #fff;
+}
+
+/* Make the nav section full-bleed and black */
+#section-27-9 {
+    background: #000;
+    padding: 0;
+}
+
+#section-27-9 .ct-section-inner-wrap {
+    max-width: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-logo h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    color: white;
+    color: inherit;
 }
 
 .nav-logo a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .nav-menu {
@@ -80,7 +93,7 @@
 /* Mobile styles */
 @media (max-width: 768px) {
     .simple-nav {
-        padding: 1rem;
+        padding: 0.75rem 1rem;
         width: 100%;
     }
     
